@@ -1,0 +1,278 @@
+:root{
+    --clr-Mcyan: hsl(176, 50%, 47%);
+    --clr-Dcyan: hsl(176, 72%, 28%);
+    --clr-Black: hsl(0, 0%, 0%);
+    --clr-Dgray: hsl(0, 0%, 48%);
+    --clr-white: hsl(100, 100%, 100%);
+}
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+ 
+.bg-img{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--clr-Dcyan); 
+    background-image: url(./images/image-hero-crow.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+     padding: 2rem 0; 
+}
+.nav{
+    padding: 0 .9rem;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.hide{
+    display: none;
+}
+.bold-span{
+    font-size: 2rem;
+}
+ 
+.nav-lists{
+    display: none;
+}
+.container{
+    width: 75%;
+    max-width: 1100px;
+    margin: 0 auto 1rem;
+
+
+}
+.first-col{
+    padding: 1.5rem 1rem;
+    box-shadow: 0px 0px 4px 3px var(--clr-Dgray);
+    border-radius: 3px;
+    position: relative;
+    top: -30px;
+    background-color: var(--clr-white);
+}
+.logo-m{
+    height: 40px;
+    width: 40px;
+    display: block;
+    margin: -45px auto 0;
+} 
+.m-head{
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 17px;
+    padding-top: .9rem;
+}
+.m-para{
+    text-align: center;
+    color: var(--clr-Dgray);
+    font-size: 14px;
+    padding: 1rem 0;
+}
+.button-link{
+    padding: .6rem 1rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--clr-white);
+    background-color: var(--clr-Mcyan);
+    border-radius: 20px;
+}
+.show-d{
+    display: none;
+    color: var(--clr-Black);
+    background-color: var(--clr-Dgray);
+}
+.icon-b{
+    width: 40px;
+    height: 37px;
+}
+
+.second-col{
+    padding: 1.5rem 1rem;
+    box-shadow: 0px 0px 4px 3px var(--clr-Dgray);
+    border-radius: 3px;
+}
+.num{
+    padding-top: 1rem;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+.line-para{
+    text-align: center;
+    padding: .8rem 0 1.2rem;
+}
+hr{
+    width: 40%;
+    margin: 0 auto;
+}
+
+.third-col{
+    margin-top: 2rem; 
+    padding: 1.5rem 1rem;
+    box-shadow: 0px 0px 4px 3px var(--clr-Dgray);
+    border-radius: 3px;
+}
+.sub-p{
+    padding: 1rem 0;
+    font-size: 15px;
+}
+.box{
+    position: relative;
+    border: 1px solid var(--clr-Dgray);
+    padding: 1rem.5rem 2rem ;
+    margin: 1rem 0;
+}
+.small-head{
+    text-transform: capitalize;
+}
+.inner-p{
+    color: var(--clr-Dcyan);
+    font-weight: 600;
+    padding: .8rem 0 .6rem;
+}
+.mid-paragraph{
+    font-size: 14px;
+    color: var(--clr-Dgray);
+    padding: .9rem 0;
+}
+.bold{
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+.light{
+    color: var(--clr-Dgray);
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.inner-link{
+   text-transform: capitalize;
+   text-decoration: none;
+   color: var(--clr-white);
+   font-weight:700 ;
+   font-size: 15px;
+   background-color: var(--clr-Mcyan);
+   padding: .7rem 1rem;
+   border-radius: 25px;
+   transition:300ms;
+}
+.inner-link:hover{
+    background-color: var(--clr-Dcyan);
+}
+
+.box-neutral{
+    opacity:0.5;
+    
+}
+.transparent-bg{
+    background-color: var(--clr-Dgray);
+}
+
+.modal-box{
+    width: 30%;
+    padding: 1rem;
+    position: absolute;
+     bottom: 50%;
+     right: 30%;
+    z-index: 2;
+    background-color: #fff;
+    color: #000;
+    border-radius: 5px;
+    box-shadow:0 3rem 5rem rgba(0, 0, 0, 0.2);
+}
+
+.modal-box h1{
+    padding: 1.2rem 0;
+}
+.close{
+    float: right;
+    border: 0;
+    outline: 0;
+    font-weight: 600;
+    font-size: 1.5rem;
+    background-color: transparent;
+}
+ 
+@media(min-width:650px){
+ .bg-img{
+    background-image: url(/images/image-hero-D-crow.jpg);
+  }
+  .icon-menu{
+    display: none;
+  }
+  .flex{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .nav-lists{
+    display: flex;
+    align-items: center;
+  }
+  .nav-list{
+    list-style: none;
+    margin-left: 1rem;
+    transition: 400ms;
+  }
+  .nav-list:hover{
+    font-size: 15px;
+    opacity: 0.7;
+  }
+  .nav-link{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--clr-white);
+  }
+    .container{
+        width: 50%;
+        max-width: 800px;
+    }
+.show-d{
+    display: block;
+}
+.icon-b{
+    position: absolute;
+    right: 155px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+hr{
+    display: none;
+}
+.even-col{
+    border-left: 1px solid var(--clr-Dgray);
+}
+.inner-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
