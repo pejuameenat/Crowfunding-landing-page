@@ -16,7 +16,7 @@
     height: 100vh;
     width: 100%;
     background-color: var(--clr-Dcyan); 
-    background-image: url(./images/image-hero-crow.jpg);
+    background-image: url(images/image-hero-crow.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -202,7 +202,7 @@ hr{
  
 @media(min-width:650px){
  .bg-img{
-    background-image: url(/images/image-hero-D-crow.jpg);
+    background-image: url(images/image-hero-D-crow.jpg);
   }
   .icon-menu{
     display: none;
